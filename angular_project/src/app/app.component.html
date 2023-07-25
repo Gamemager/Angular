@@ -11,51 +11,51 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" routerLink="/public/home">Inicio</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Iniciar Sesión</a>
+            <a class="nav-link" routerLink="/public/acceder">Iniciar Sesión</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Registro</a>
+            <a class="nav-link" routerLink="/public/registro">Registro</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Más</a>
+            <a class="nav-link" routerLink="/public/mas">Más</a>
           </li>
           <li class="nav-item dropdown">
-            <a href="/html/accesorios.html" class="nav-link dropdown-toggle" href="#" role="button"
+            <a class="nav-link dropdown-toggle" href="#" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">Accesorios</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./html/accesorios/cargadores.html">
+                <a class="dropdown-item" routerLink="#">
                   Cargadores
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/accesorios/fundas.html">
+                <a class="dropdown-item" routerLink="#">
                   Fundas
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/accesorios/audifonos.html">
+                <a class="dropdown-item" routerLink="#">
                   Audifonos
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/accesorios/stands.html">
+                <a class="dropdown-item" routerLink="#">
                   Stands
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/accesorios/popsocket.html">Popsockets
+                <a class="dropdown-item" routerLink="#">Popsockets
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/accesorios/vidriosTemplados.html">Vidrios Templados
+                <a class="dropdown-item" routerLink="#">Vidrios Templados
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/Accesorios.html">
+                <a class="dropdown-item" routerLink="/public/accesorios">
                   Todos
                 </a>
               </li>
@@ -66,35 +66,35 @@
               data-bs-toggle="dropdown" aria-expanded="false">Categorías</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./html/categorias/apple.html">
+                <a class="dropdown-item" routerLink="#">
                   Apple
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias/oppo.html">
+                <a class="dropdown-item" routerLink="#">
                   Oppo
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias/samsung.html">
+                <a class="dropdown-item" routerLink="#">
                   Samsung
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias/xiaomi.html">
+                <a class="dropdown-item" routerLink="#">
                   Xiaomi
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias/huawei.html">Huawei
+                <a class="dropdown-item" routerLink="#">Huawei
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias/motorola.html">Motorola
+                <a class="dropdown-item" routerLink="#">Motorola
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./html/categorias.html">Todos
+                <a class="dropdown-item" routerLink="/public/categorias">Todos
                 </a>
               </li>
             </ul>
@@ -103,13 +103,13 @@
       </div>
     </div>
   </nav>
-</header>
+</header> 
 
-<div class="container">
+<div>
   <router-outlet></router-outlet>
 </div>
 
-<footer>
+<footer class="pie">
   <div class="logopie1">
     <div class="logopie2">
       <p>LOPEZ FONTALVO S.A.S</p>
@@ -128,3 +128,5 @@
     <p> Terminos y Condiciones </p>
   </div>
 </footer>
+
+

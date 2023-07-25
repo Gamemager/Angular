@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'categorias', component: CategoriasComponent},
   { path: 'mas', component: MasComponent},
   { path: 'registro', component: RegistroComponent},
-  {path: 'soporte_tecnico', component: SoporteTecnicoComponent},
+  { path: 'soporte_tecnico', component: SoporteTecnicoComponent},
 ];
 
 @NgModule({
