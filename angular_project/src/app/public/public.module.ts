@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { AccederComponent } from './componentes/acceder/acceder.component';
@@ -12,6 +14,6 @@ import { SoporteTecnicoComponent } from './componentes/soporte-tecnico/soporte-t
 
 @NgModule({
   declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent],
-  imports: [CommonModule, PublicRoutingModule],
+  imports: [CommonModule, PublicRoutingModule, FormsModule, HttpClientModule],
 })
 export class PublicModule {}
