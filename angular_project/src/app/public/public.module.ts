@@ -11,9 +11,15 @@ import { CategoriasComponent } from './componentes/categorias/categorias.compone
 import { MasComponent } from './componentes/mas/mas.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { SoporteTecnicoComponent } from './componentes/soporte-tecnico/soporte-tecnico.component';
+import { AppleComponent } from './componentes/categorias-telefonos/apple/apple.component';
+import { SamsungComponent } from './componentes/categorias-telefonos/samsung/samsung.component';
+import { XiaomiComponent } from './componentes/categorias-telefonos/xiaomi/xiaomi.component';
+import { OppoComponent } from './componentes/categorias-telefonos/oppo/oppo.component';
+import { HuaweiComponent } from './componentes/categorias-telefonos/huawei/huawei.component';
+import { MotorolaComponent } from './componentes/categorias-telefonos/motorola/motorola.component';
 
 @NgModule({
   declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent],
-  imports: [CommonModule, PublicRoutingModule, FormsModule, HttpClientModule],
+  imports: [CommonModule, PublicRoutingModule,FormsModule, HttpClientModule],
 })
 export class PublicModule {}
