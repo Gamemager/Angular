@@ -16,8 +16,8 @@ export class Usuario {
         _Id: string; 
         
         Full_name: string;
-        
-        DOB: Date;
+        //correguir 
+        DOB: string;
         
         Usuario: string;
         
