@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { AccederComponent } from './componentes/acceder/acceder.component';
@@ -18,7 +20,12 @@ import { MotorolaComponent } from './componentes/categorias-telefonos/motorola/m
 import { PublicComponent } from './public.component';
 
 @NgModule({
+<<<<<<< HEAD
   declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent, AppleComponent, SamsungComponent, XiaomiComponent, OppoComponent, HuaweiComponent, MotorolaComponent, PublicComponent],
   imports: [CommonModule, PublicRoutingModule],
+=======
+  declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent],
+  imports: [CommonModule, PublicRoutingModule,FormsModule, HttpClientModule],
+>>>>>>> 1cca8c69604ccb0fceeb1d77dcb624b4a238e957
 })
 export class PublicModule {}
