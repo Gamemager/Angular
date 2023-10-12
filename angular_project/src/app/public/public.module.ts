@@ -15,9 +15,10 @@ import { XiaomiComponent } from './componentes/categorias-telefonos/xiaomi/xiaom
 import { OppoComponent } from './componentes/categorias-telefonos/oppo/oppo.component';
 import { HuaweiComponent } from './componentes/categorias-telefonos/huawei/huawei.component';
 import { MotorolaComponent } from './componentes/categorias-telefonos/motorola/motorola.component';
+import { PublicComponent } from './public.component';
 
 @NgModule({
-  declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent, AppleComponent, SamsungComponent, XiaomiComponent, OppoComponent, HuaweiComponent, MotorolaComponent],
+  declarations: [AccederComponent, HomeComponent, AccesoriosComponent, CategoriasComponent, MasComponent, RegistroComponent, SoporteTecnicoComponent, AppleComponent, SamsungComponent, XiaomiComponent, OppoComponent, HuaweiComponent, MotorolaComponent, PublicComponent],
   imports: [CommonModule, PublicRoutingModule],
 })
 export class PublicModule {}

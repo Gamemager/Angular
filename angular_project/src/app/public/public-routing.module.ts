@@ -13,23 +13,26 @@ import { MotorolaComponent } from './componentes/categorias-telefonos/motorola/m
 import { OppoComponent } from './componentes/categorias-telefonos/oppo/oppo.component';
 import { SamsungComponent } from './componentes/categorias-telefonos/samsung/samsung.component';
 import { XiaomiComponent } from './componentes/categorias-telefonos/xiaomi/xiaomi.component';
+import { PublicComponent } from './public.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/public/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'acceder', component: AccederComponent },
-  { path: 'accesorios', component: AccesoriosComponent}, 
-  { path: 'categorias', component: CategoriasComponent},
-  { path: 'mas', component: MasComponent},
-  { path: 'registro', component: RegistroComponent},
-  { path: 'soporte_tecnico', component: SoporteTecnicoComponent},
-  { path: 'apple', component: AppleComponent},
-  { path: 'huawei', component: HuaweiComponent},
-  { path: 'motorola', component: MotorolaComponent},
-  { path: 'oppo', component: OppoComponent},
-  { path: 'samsung', component: SamsungComponent},
-  { path: 'xiaomi', component: XiaomiComponent}
+  { path: '', redirectTo: '/public/home', pathMatch: 'full'}, { path:'', component: PublicComponent, children:[
 
+    { path: 'home', component: HomeComponent },
+    { path: 'acceder', component: AccederComponent },
+    { path: 'accesorios', component: AccesoriosComponent}, 
+    { path: 'categorias', component: CategoriasComponent},
+    { path: 'mas', component: MasComponent},
+    { path: 'registro', component: RegistroComponent},
+    { path: 'soporte_tecnico', component: SoporteTecnicoComponent},
+    { path: 'apple', component: AppleComponent},
+    { path: 'huawei', component: HuaweiComponent},
+    { path: 'motorola', component: MotorolaComponent},
+    { path: 'oppo', component: OppoComponent},
+    { path: 'samsung', component: SamsungComponent},
+    { path: 'xiaomi', component: XiaomiComponent}
+  ] },
+    
 ];
 
 @NgModule({
